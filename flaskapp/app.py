@@ -21,7 +21,7 @@ def backend_process(user_input):
     return f"Processed: {output}"
 
 description_html = """
-<h1>Camellia's Grill Chatbot</h1>
+<h1>Yelp Chatbot</h1>
 <p>Ask this chatbot a question about Camellia's Grill and get a response based off of real reviews.</p>
 """
 
