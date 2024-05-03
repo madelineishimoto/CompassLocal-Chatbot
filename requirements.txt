@@ -30,6 +30,7 @@ executing==2.0.1
 faiss-cpu==1.7.4
 fastapi==0.109.2
 filelock==3.13.1
+Flask==3.0.3
 flatbuffers==23.5.26
 frozenlist==1.4.1
 fsspec==2024.2.0
