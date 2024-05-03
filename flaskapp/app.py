@@ -1,7 +1,10 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import dotenv
+import streamlit as st
 from chat import create_docchain_retriever, create_retrieval_chain, reply, create_chat_history
+
+st.set_page_config(page_title="Camellia's Chatbot")
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS
@@ -21,7 +24,7 @@ def backend_process(user_input):
     return f"Processed: {output}"
 
 description_html = """
-<h1>Yelp Chatbot</h1>
+<h1>Camellia's Grill Chatbot</h1>
 <p>Ask this chatbot a question about Camellia's Grill and get a response based off of real reviews.</p>
 """
 
