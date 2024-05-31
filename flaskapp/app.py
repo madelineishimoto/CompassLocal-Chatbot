@@ -4,6 +4,11 @@ import dotenv
 import streamlit as st
 from chat import create_docchain_retriever, create_retrieval_chain, reply, create_chat_history
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+
 st.set_page_config(page_title="Camellia's Chatbot")
 
 app = Flask(__name__)
